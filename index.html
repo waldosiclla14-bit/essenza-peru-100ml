@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESSENZA PERÚ · Solo 100 ML · Perfumes Originales en Soles</title>
+<meta name="description" content="Essenza Perú: 2916 perfumes 100 ML originales. Mujer, hombre, árabes, unisex, testers. Precios Chile +50% en soles. Reserva con 50%.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#c9a24b;--gold2:#e8c878;--ink:#12100c;--rose:#ff2e7e;--cream:#faf7f0;--card:#ffffff;--mut:#6f6a60;--green:#178a4c;--line:#ece5d8}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink)}
+h1,h2,.serif{font-family:'Fraunces',serif}
+.marquee{background:var(--ink);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.4px;overflow:hidden;white-space:nowrap}
+.marquee div{display:inline-block;padding:9px 0;animation:mq 28s linear infinite}
+.marquee b{color:var(--gold2)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.header-inner{max-width:1280px;margin:auto;display:flex;align-items:center;gap:16px;padding:13px 18px}
+.logo{font-family:'Fraunces',serif;font-size:27px;font-weight:900;line-height:1}
+.logo span{background:linear-gradient(120deg,var(--gold),#8a6a1c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{display:block;font-family:'Inter';font-size:10.5px;letter-spacing:4px;color:var(--mut);font-weight:800;margin-top:3px}
+.search{flex:1;display:flex;box-shadow:0 8px 24px rgba(0,0,0,.07);border-radius:14px;overflow:hidden}
+.search input{flex:1;padding:13px 16px;border:2px solid var(--ink);border-right:none;border-radius:14px 0 0 14px;outline:none;font-size:14px;background:#fff}
+.search button{background:var(--ink);color:#fff;border:2px solid var(--ink);padding:0 22px;font-weight:800;cursor:pointer}
+.search button:hover{background:var(--rose);border-color:var(--rose)}
+.cartbtn{background:linear-gradient(135deg,#1a1712,#3a2f14);color:#fff;padding:13px 18px;border-radius:14px;border:1px solid #2c2618;font-weight:800;cursor:pointer;transition:.2s}
+.cartbtn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,0,0,.2)}
+.nav{background:var(--ink)}
+.nav-inner{max-width:1280px;margin:auto;display:flex;gap:2px;overflow-x:auto;padding:0 12px}
+.nav a{color:#fff;text-decoration:none;padding:13px 15px;font-size:13px;font-weight:700;white-space:nowrap;opacity:.92}
+.nav a.hot,.nav a:hover{background:var(--rose);opacity:1}
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 400px at 15% 10%,rgba(201,162,75,.35),transparent),radial-gradient(700px 380px at 85% 20%,rgba(255,46,126,.25),transparent),linear-gradient(135deg,#0f0d09 30%,#2b2110 70%,#4a3a12);color:#fff;padding:60px 20px 70px;text-align:center}
+.hero-inner{position:relative;z-index:2;max-width:900px;margin:auto}
+.kicker{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 15px;border-radius:30px;font-size:12.5px;font-weight:800;letter-spacing:1px}
+.hero h1{font-size:clamp(32px,5.4vw,58px);line-height:1.02;margin:16px 0 10px}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,#f4dd9a,#c9a24b 60%,#fff0c2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{opacity:.9;max-width:760px;margin:0 auto 22px;font-size:15px}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-gold{background:linear-gradient(135deg,#f0d48a,#c9a24b);color:#1c1608;padding:15px 30px;border-radius:40px;font-weight:900;text-decoration:none;box-shadow:0 12px 30px rgba(201,162,75,.4)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:14px 26px;border-radius:40px;font-weight:800;text-decoration:none}
+.stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 20px;min-width:150px}
+.stat b{font-family:'Fraunces';font-size:22px;display:block;color:var(--gold2)}
+.stat span{font-size:12px;opacity:.85}
+.badges{max-width:1280px;margin:-26px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:0 18px;position:relative;z-index:5}
+.badge{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center;box-shadow:0 14px 30px rgba(60,45,10,.1);font-size:13px;font-weight:800}
+.wrap{max-width:1280px;margin:auto;padding:16px 18px}
+.tasa{background:#fff;border:1px dashed var(--gold);border-radius:14px;padding:12px 16px;font-size:13.5px;margin:18px 0;box-shadow:0 6px 18px rgba(201,162,75,.15)}
+.reserve{background:linear-gradient(135deg,#141210,#3a2f14);color:#f1ead6;border-radius:18px;padding:26px;margin:18px 0;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;box-shadow:0 16px 34px rgba(40,30,8,.25)}
+.reserve h2{font-family:'Fraunces';font-size:24px;margin-bottom:6px}
+.reserve h2 em{color:#e6d3a0;font-style:italic}
+.reserve p{font-size:13.5px;color:#cfc5ac;max-width:64ch}
+.reserve p b{color:#fff}
+.btn-reserve{background:linear-gradient(135deg,#f0d48a,#c9a24b);color:#171307;text-decoration:none;padding:15px 26px;border-radius:40px;font-weight:900;white-space:nowrap;text-align:center;box-shadow:0 12px 26px rgba(201,162,75,.4)}
+.btn-reserve:hover{filter:brightness(1.06)}
+.bar{position:sticky;top:66px;z-index:40;background:rgba(250,247,240,.9);backdrop-filter:blur(12px);padding:12px 0;border-bottom:1px solid var(--line)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{border:1.5px solid var(--line);background:#fff;padding:9px 16px;border-radius:30px;cursor:pointer;font-size:13px;font-weight:800;transition:.15s}
+.pill:hover{border-color:var(--ink)}
+.pill.active{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:0 8px 18px rgba(0,0,0,.2)}
+select.sel{border:1.5px solid var(--line);border-radius:30px;padding:9px 13px;font-size:13px;font-weight:700;background:#fff}
+.count{font-size:13px;color:var(--mut);margin:10px 2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card);position:relative;display:flex;flex-direction:column;transition:.22s;animation:up .5s ease both}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(50,35,5,.18);border-color:var(--gold)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.imgw{position:relative;background:linear-gradient(180deg,#ffffff,#f4efe3);overflow:hidden;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+.card img{width:100%;height:100%;object-fit:contain;padding:14px;transition:.35s;display:block}
+.card:hover img{transform:scale(1.06)}
+.off{position:absolute;top:12px;left:12px;background:linear-gradient(135deg,#ff2e7e,#b31254);color:#fff;font-size:12px;font-weight:900;padding:5px 11px;border-radius:30px;box-shadow:0 8px 16px rgba(255,46,126,.4)}
+.marca-tag{position:absolute;bottom:12px;left:12px;background:rgba(18,16,12,.85);color:#f4dd9a;font-size:11px;font-weight:800;padding:5px 10px;border-radius:30px;max-width:70%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-body{padding:13px;display:flex;flex-direction:column;gap:7px;flex:1}
+.stars{color:#e0a81e;font-size:12px;letter-spacing:1px}
+.card-body h3{font-size:13.5px;line-height:1.4;min-height:38px;font-weight:700}
+.precios{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.old{text-decoration:line-through;color:#a39c8d;font-size:12.5px}
+.new{font-family:'Fraunces';font-weight:900;font-size:20px}
+.clp{font-size:11px;color:var(--mut)}
+.stock{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e22}
+.add{margin-top:auto;background:linear-gradient(135deg,#191407,#3d3013);color:#ffe9ad;border:none;padding:12px;border-radius:13px;font-weight:900;cursor:pointer;font-size:13.5px;transition:.18s}
+.add:hover{background:linear-gradient(135deg,#ff2e7e,#a50e4f);color:#fff}
+.pag{display:flex;gap:8px;align-items:center;justify-content:center;margin:26px 0;flex-wrap:wrap}
+.pag button{border:1.5px solid var(--line);background:#fff;padding:10px 16px;border-radius:12px;cursor:pointer;font-weight:800}
+.pag button:disabled{opacity:.35}.pag b{background:var(--ink);color:#fff;padding:10px 15px;border-radius:12px}
+.info2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:26px 0}
+.info2 div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 26px rgba(60,45,10,.07)}
+.info2 h3{font-family:'Fraunces';margin-bottom:8px;font-size:19px}
+.footer{background:#0f0d09;color:#cfc7b4;margin-top:28px;padding:36px 18px}
+.footer-inner{max-width:1280px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.footer h4{color:var(--gold2);margin-bottom:10px;font-family:'Fraunces'}.footer li{list-style:none;font-size:14px;line-height:1.8}
+.drawer{position:fixed;top:0;right:-430px;width:410px;max-width:94vw;height:100vh;background:#fff;z-index:100;transition:.28s;box-shadow:-14px 0 40px rgba(0,0,0,.25);display:flex;flex-direction:column;border-radius:20px 0 0 20px}
+.drawer.open{right:0}.drawer-head{padding:16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:16px}
+.drawer-body{flex:1;overflow:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px;background:var(--cream)}
+.item{display:flex;gap:10px;border:1px solid var(--line);border-radius:14px;padding:9px;align-items:center;background:#fff}
+.item img{width:58px;height:58px;object-fit:contain;border-radius:10px;background:#f4efe3}
+.item b{font-size:12.5px}.qty{display:flex;gap:6px;align-items:center;margin-top:6px}
+.qty button{width:25px;height:25px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:900}
+.drawer-foot{padding:15px;border-top:1px solid var(--line);background:#fff}
+.total{font-size:19px;font-weight:900;display:flex;justify-content:space-between;margin-bottom:8px;font-family:'Fraunces'}
+.total.small{font-size:15px}
+.pay{background:#f3efe4;border-radius:12px;padding:11px;font-size:13px;margin-bottom:10px}
+.reserva-note{font-size:12.5px;background:#fff8e1;border:1px dashed var(--gold);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.reserva-note b{color:var(--ink)}
+.checkout{width:100%;background:linear-gradient(135deg,#1faa55,#0d6e34);color:#fff;border:none;padding:14px;border-radius:13px;font-weight:900;cursor:pointer;margin-bottom:8px;font-size:15px}
+.btn-pay50{width:100%;background:linear-gradient(135deg,#f0d48a,#c9a24b);color:#171307;border:none;padding:14px;border-radius:13px;font-weight:900;cursor:pointer;margin-bottom:8px;font-size:14px}
+.clear{width:100%;background:#fff;border:1px solid #ddd;padding:10px;border-radius:12px;cursor:pointer}
+.wa{position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#2be36f,#0d8a3c);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;z-index:90;box-shadow:0 14px 30px rgba(13,138,60,.45)}
+.overlay{position:fixed;inset:0;background:rgba(15,10,0,.45);display:none;z-index:95}.overlay.show{display:block}
+.empty{text-align:center;color:var(--mut);padding:26px;grid-column:1/-1}
+.loading{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:16px}
+.skel{height:340px;border-radius:20px;background:linear-gradient(100deg,#eee7d6 40%,#fbf7ec 50%,#eee7d6 60%);background-size:200% 100%;animation:sk 1.2s infinite}
+@keyframes sk{to{background-position:-200% 0}}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#ffe9ad;padding:13px 22px;border-radius:40px;font-weight:800;opacity:0;transition:.25s;z-index:120;box-shadow:0 16px 34px rgba(0,0,0,.35)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:720px){.badges{grid-template-columns:repeat(2,1fr)}.search{display:none}.reserve{grid-template-columns:1fr}.bar{top:58px}}
+</style>
+</head>
+<body>
+<div class="marquee"><div>✨ <b>SOLO 100 ML</b> · PERFUMES ORIGINALES · <b>RESERVA CON 50%</b> · WHATSAPP 993 943 563 · YAPE · PLIN · VISA · ✨ <b>SOLO 100 ML</b> · PERFUMES ORIGINALES · <b>RESERVA CON 50%</b> · WHATSAPP 993 943 563 ·&nbsp;</div></div>
+<header class="header"><div class="header-inner">
+<div class="logo">ESSENZA <span>PERÚ</span><small>SOLO · 100 ML</small></div>
+<div class="search"><input id="q" placeholder="Buscar entre miles de perfumes 100 ML: Yara, Asad, Herrera..."><button onclick="goSearch()">Buscar</button></div>
+<button class="cartbtn" onclick="toggleCart(true)">🛒 Carrito · <span id="count">0</span></button>
+</div></header>
+<nav class="nav"><div class="nav-inner">
+<a class="hot" href="#catalogo">TODO 100 ML</a><a href="#" data-nav="mujer">MUJER</a><a href="#" data-nav="hombre">HOMBRE</a><a href="#" data-nav="arabe">ÁRABES</a><a href="#" data-nav="unisex">UNISEX</a><a href="#" data-nav="tester">TESTERS</a><a href="#" data-nav="estuche">ESTUCHES</a><a href="#mayorista">MAYORISTA</a>
+</div></nav>
+<section class="hero"><div class="hero-inner">
+<span class="kicker">🇵🇪 CLON PREMIUM · SOLO 100 ML</span>
+<h1>Todos los perfumes <em>100 ML</em> en soles</h1>
+<p id="hero-sub">Cargando catálogo completo...</p>
+<div class="cta"><a class="btn-gold" href="#catalogo">🔥 Explorar 100 ML</a><a class="btn-ghost" href="https://wa.me/56993943563?text=Hola%2C%20quiero%20reservar%20un%20perfume%20100%20ML%20pagando%20el%2050%25" target="_blank">Reservar por WhatsApp</a></div>
+<div class="stats"><div class="stat"><b id="st-total">—</b><span>perfumes 100 ML</span></div><div class="stat"><b>100%</b><span>originales · sellados</span></div><div class="stat"><b>S/ soles</b><span>TC 285.17 + 50%</span></div><div class="stat"><b>50%</b><span>reserva por WhatsApp</span></div></div>
+</div></section>
+<div class="badges">
+<div class="badge">✅ Originales con sello</div>
+<div class="badge">🚚 Olva · Shalom · Marvisur</div>
+<div class="badge">💳 Yape · Plin · Visa</div>
+<div class="badge">📲 Reserva 993 943 563</div>
+</div>
+<div class="wrap" id="catalogo">
+<div class="tasa">💱 <b>SOLO 100 ML · Todas las áreas</b> · TC <b>285.17 CLP = S/1</b> + 50% margen Perú · <span id="tcount">cargando...</span></div>
+<section class="reserve">
+<div><h2>¡Reserva ahora! <em>Asegura la tuya pagando el 50%.</em></h2>
+<p>Escríbenos por WhatsApp al <b>993 943 563</b> para consultar disponibilidad y reservar. Te confirmamos stock, te enviamos el link de pago del <b>50% de anticipo</b> y separamos tu perfume 100 ML.</p></div>
+<a class="btn-reserve" href="https://wa.me/56993943563?text=Hola%2C%20quiero%20reservar%20un%20perfume%20100%20ML%20pagando%20el%2050%25.%20%C2%BFAyuda%20con%20disponibilidad%3F" target="_blank">Reservar por WhatsApp</a>
+</section>
+<div class="bar"><div class="filters" id="filters">
+<button class="pill active" data-f="todos">✨ Todos</button>
+<button class="pill" data-f="mujer">👩 Mujer</button>
+<button class="pill" data-f="hombre">👨 Hombre</button>
+<button class="pill" data-f="unisex">⚖️ Unisex</button>
+<button class="pill" data-f="arabe">🕌 Árabes</button>
+<button class="pill" data-f="tester">🧪 Testers</button>
+<button class="pill" data-f="estuche">🎁 Estuches</button>
+<select id="marca" class="sel"><option value="">Todas las marcas</option></select>
+<select id="orden" class="sel"><option value="relev">Relevancia</option><option value="asc">Menor precio</option><option value="desc">Mayor precio</option><option value="off">Mayor OFF</option></select>
+</div></div>
+<div class="count" id="count2"></div>
+<div class="grid" id="grid"><div class="loading"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div></div>
+<div class="pag" id="pag"></div>
+<div class="info2" id="sucursales">
+<div><h3>🏬 Sucursales Perú</h3><p>Miraflores: Av. Larco 1232, Piso 2<br>Gamarra: Jr. Gamarra 620, La Victoria<br>Lun–Sáb 10am–8pm</p></div>
+<div id="mayorista"><h3>📦 Venta Mayorista</h3><p>Desde 6 und precio distribuidor. Cotiza por WhatsApp al 993 943 563.</p></div>
+<div><h3>💳 Pagos y reserva</h3><p><b>Yape / Plin: 993 943 563</b><br>Visa · BCP / Interbank · Reserva con el 50%.</p></div>
+</div>
+</div>
+<footer class="footer"><div class="footer-inner">
+<div><h4>ESSENZA PERÚ 🇵🇪</h4><p>Espejo de multimarcasperfumes.cl filtrado a 100 ML. Conversión CLP→PEN con +50%.</p><p>WhatsApp 993 943 563</p></div>
+<div><h4>Áreas 100 ML</h4><li>Mujer · Hombre · Unisex</li><li>Árabes · Testers · Estuches</li></div>
+<div><h4>Ayuda</h4><li>Reserva con 50% anticipo</li><li>Cambios 7 días</li><li>Libro de reclamaciones</li></div>
+<div><h4>TC CLP → PEN</h4><p>285.17 CLP = S/1 (24/09/2026).</p></div>
+</div></footer>
+<div class="overlay" id="ov" onclick="toggleCart(false)"></div>
+<aside class="drawer" id="drawer">
+<div class="drawer-head"><span>🛒 Tu carrito · Soles</span><button onclick="toggleCart(false)" style="border:none;background:none;font-size:20px;cursor:pointer">✕</button></div>
+<div class="drawer-body" id="cbody"></div>
+<div class="drawer-foot">
+<div class="reserva-note">¿No quieres pagar todo hoy? <b>Reserva con el 50%</b> y cancela el resto al recibir.</div>
+<div class="pay">💳 <b>Yape / Plin 993 943 563</b> · Lima S/9.90 · Provincias S/15–25</div>
+<div class="total"><span>Total</span><span id="ctotal">S/ 0.00</span></div>
+<div class="total small"><span>Anticipo 50%</span><span id="canticipo">S/ 0.00</span></div>
+<button class="checkout" onclick="checkout()">Pedir por WhatsApp</button>
+<button class="btn-pay50" onclick="reservar()">Reservar por WhatsApp · Pago 50%</button>
+<button class="clear" onclick="vaciar()">Vaciar</button>
+</div>
+</aside>
+<div class="toast" id="toast">Agregado</div>
+<a class="wa" href="https://wa.me/56993943563?text=Hola%2C%20quiero%20reservar%20un%20perfume%20100%20ML%20pagando%20el%2050%25" target="_blank">✆</a>
+<script>
+const TC=285.17, MARGEN=1.5, POR_PAG=48;
+const soles=clp=>+(clp*MARGEN/TC).toFixed(2);
+const fmt=n=>'S/ '+n.toFixed(2);
+let ALL=[], filtro='todos', q='', marca='', orden='relev', pag=1;
+async function cargar(){
+  try{ const r=await fetch('catalogo-100ml.json'); ALL=await r.json(); }
+  catch(e){ document.getElementById('grid').innerHTML='<p class="empty">No se pudo cargar catalogo-100ml.json.</p>'; return; }
+  ALL=ALL.filter(p=>p.clp>0);
+  document.getElementById('hero-sub').innerHTML=`Catálogo completo: <strong>${ALL.length.toLocaleString()} perfumes 100 ML</strong> · <strong>Chile +50% → soles</strong> · TC <strong>285.17</strong> · Reserva con 50% al <strong>993 943 563</strong>`;
+  document.getElementById('st-total').textContent=ALL.length.toLocaleString();
+  document.getElementById('tcount').textContent=`${ALL.length.toLocaleString()} productos 100 ML listos.`;
+  const marcas=[...new Set(ALL.map(p=>p.marca).filter(Boolean))].sort();
+  const sel=document.getElementById('marca');
+  marcas.slice(0,150).forEach(m=>{const o=document.createElement('option');o.value=m;o.textContent=m;sel.appendChild(o);});
+  render();
+}
+function lista(){
+  let L=ALL.slice();
+  if(filtro!=='todos') L=L.filter(p=>(p.cat||'').includes(filtro));
+  if(marca) L=L.filter(p=>p.marca===marca);
+  if(q) L=L.filter(p=>(p.t+' '+(p.marca||'')).toLowerCase().includes(q));
+  if(orden==='asc') L.sort((a,b)=>a.clp-b.clp);
+  else if(orden==='desc') L.sort((a,b)=>b.clp-a.clp);
+  else if(orden==='off') L.sort((a,b)=>desc(b)-desc(a));
+  return L;
+}
+function desc(p){ if(!p.old||p.old<=p.clp) return 0; return 1-p.clp/p.old; }
+function card(p,i){
+  const s=soles(p.clp), d=desc(p), so=p.old?soles(p.old):0;
+  const off=d>0?`<span class="off">-${Math.round(d*100)}% OFF</span>`:'';
+  const oldH=d>0?`<span class="old">${fmt(so)}</span>`:'';
+  const img=p.img||'';
+  return `<div class="card" style="animation-delay:${(i%48)*18}ms">${off}<div class="imgw"><img loading="lazy" src="${img}" alt="" onerror="this.style.opacity=0"><span class="marca-tag">${p.marca||'Original'}</span></div>
+  <div class="card-body"><div class="stars">★★★★★ <span style="color:#a39c8d">· 100 ML</span></div><h3>${p.t}</h3>
+  <div class="precios"><span class="new">${fmt(s)}</span>${oldH}</div>
+  <div class="clp">$${p.clp.toLocaleString('es-CL')} CLP +50% · ${p.cat||''}</div>
+  <div class="stock"><span class="dot"></span>Stock Lima · Envío 24/48h</div>
+  <button class="add" onclick="addCart('${p.h}')">🛒 Añadir · ${fmt(s)}</button></div></div>`;
+}
+function render(){
+  const L=lista(); const tot=L.length, pages=Math.max(1,Math.ceil(tot/POR_PAG));
+  if(pag>pages) pag=pages;
+  const items=L.slice((pag-1)*POR_PAG,(pag-1)*POR_PAG+POR_PAG);
+  document.getElementById('count2').textContent=`Mostrando ${items.length} de ${tot.toLocaleString()} perfumes 100 ML · Página ${pag}/${pages}`;
+  document.getElementById('grid').innerHTML=items.length?items.map(card).join(''):'<p class="empty">Sin resultados.</p>';
+  document.getElementById('pag').innerHTML=`<button ${pag<=1?'disabled':''} onclick="goPag(1)">«</button><button ${pag<=1?'disabled':''} onclick="goPag(${pag-1})">‹ Anterior</button><b>${pag} / ${pages}</b><button ${pag>=pages?'disabled':''} onclick="goPag(${pag+1})">Siguiente ›</button><button ${pag>=pages?'disabled':''} onclick="goPag(${pages})">»</button>`;
+}
+function goPag(n){pag=n;render();window.scrollTo({top:document.getElementById('catalogo').offsetTop-130,behavior:'smooth'});}
+function goSearch(){q=document.getElementById('q').value.toLowerCase().trim();pag=1;render();}
+document.getElementById('q').addEventListener('input',e=>{q=e.target.value.toLowerCase().trim();pag=1;render();});
+document.querySelectorAll('.pill').forEach(b=>b.onclick=()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));b.classList.add('active');filtro=b.dataset.f;pag=1;render();});
+document.querySelectorAll('[data-nav]').forEach(a=>a.onclick=e=>{e.preventDefault();const f=a.dataset.nav;document.querySelectorAll('.pill').forEach(x=>x.classList.toggle('active',x.dataset.f===f));filtro=f;pag=1;render();document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});});
+document.getElementById('marca').onchange=e=>{marca=e.target.value;pag=1;render();};
+document.getElementById('orden').onchange=e=>{orden=e.target.value;pag=1;render();};
+const byH=h=>ALL.find(p=>p.h===h);
+let cart=JSON.parse(localStorage.getItem('essenza_cart_v3')||'[]');
+function save(){localStorage.setItem('essenza_cart_v3',JSON.stringify(cart));draw();}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._x);t._x=setTimeout(()=>t.classList.remove('show'),1300);}
+function addCart(h){const f=cart.find(i=>i.h===h);if(f)f.qty++;else cart.push({h,qty:1});save();toast('✅ Agregado');toggleCart(true);}
+function chQty(h,d){const f=cart.find(i=>i.h===h);if(!f)return;f.qty+=d;if(f.qty<=0)cart=cart.filter(i=>i.h!==h);save();}
+function vaciar(){cart=[];save();}
+function draw(){
+  const body=document.getElementById('cbody'); let total=0,n=0;
+  cart=cart.filter(it=>byH(it.h));
+  if(!cart.length) body.innerHTML='<p class="empty">Carrito vacío.</p>';
+  else body.innerHTML=cart.map(it=>{const p=byH(it.h);const s=soles(p.clp);total+=s*it.qty;n+=it.qty;
+    return `<div class="item"><img src="${p.img}" onerror="this.style.opacity=0"><div style="flex:1"><b>${p.t}</b><div>${fmt(s)} c/u</div><div class="qty"><button onclick="chQty('${p.h}',-1)">−</button><span>${it.qty}</span><button onclick="chQty('${p.h}',1)">+</button></div></div><b>${fmt(s*it.qty)}</b></div>`;}).join('');
+  document.getElementById('ctotal').textContent=fmt(total);
+  document.getElementById('canticipo').textContent=fmt(total/2);
+  document.getElementById('count').textContent=n;
+}
+function toggleCart(o){document.getElementById('drawer').classList.toggle('open',o);document.getElementById('ov').classList.toggle('show',o);}
+function cartLines(){let total=0;const lines=cart.map(it=>{const p=byH(it.h);const s=soles(p.clp);total+=s*it.qty;return `• ${it.qty}x ${p.t} - ${fmt(s*it.qty)}`;}).join('\n');return {lines,total};}
+function checkout(){
+  if(!cart.length){alert('Agrega un perfume primero');return;}
+  const {lines,total}=cartLines();
+  window.open('https://wa.me/56993943563?text='+encodeURIComponent(`Hola, quiero pedir:\n${lines}\n\nTOTAL: ${fmt(total)}`),'_blank');
+}
+function reservar(){
+  if(!cart.length){alert('Agrega un perfume primero');return;}
+  const {lines,total}=cartLines();
+  window.open('https://wa.me/56993943563?text='+encodeURIComponent(`Hola, ¡QUIERO RESERVAR! Aseguro mi reserva pagando el 50%.\n\n${lines}\n\nTOTAL: ${fmt(total)}\nANTICIPO 50%: ${fmt(+(total/2).toFixed(2))}\n\n¿Me confirma disponibilidad y link de pago?`),'_blank');
+}
+cargar();draw();
+</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ESSENZA PERÚ · Solo 100 ML · Perfumes Originales en Soles</title>
-<meta name="description" content="Essenza Perú: 2916 perfumes 100 ML originales. Mujer, hombre, árabes, unisex, testers. Precios Chile +50% en soles. Reserva con 50%.">
+<meta name="description" content="Essenza Perú: 2916 perfumes 100 ML originales. Mujer, hombre, árabes, unisex, testers. Precios Chile con 10% de descuento en soles. Reserva con 50%.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -133,7 +133,7 @@ select.sel{border:1.5px solid var(--line);border-radius:30px;padding:9px 13px;fo
 <h1>Todos los perfumes <em>100 ML</em> en soles</h1>
 <p id="hero-sub">Cargando catálogo completo...</p>
 <div class="cta"><a class="btn-gold" href="#catalogo">🔥 Explorar 100 ML</a><a class="btn-ghost" href="https://wa.me/56993943563?text=Hola%2C%20quiero%20reservar%20un%20perfume%20100%20ML%20pagando%20el%2050%25" target="_blank">Reservar por WhatsApp</a></div>
-<div class="stats"><div class="stat"><b id="st-total">—</b><span>perfumes 100 ML</span></div><div class="stat"><b>100%</b><span>originales · sellados</span></div><div class="stat"><b>S/ soles</b><span>TC 285.17 + 50%</span></div><div class="stat"><b>50%</b><span>reserva por WhatsApp</span></div></div>
+<div class="stats"><div class="stat"><b id="st-total">—</b><span>perfumes 100 ML</span></div><div class="stat"><b>100%</b><span>originales · sellados</span></div><div class="stat"><b>S/ soles</b><span>TC 285.17 · −10%</span></div><div class="stat"><b>50%</b><span>reserva por WhatsApp</span></div></div>
 </div></section>
 <div class="badges">
 <div class="badge">✅ Originales con sello</div>
@@ -142,7 +142,7 @@ select.sel{border:1.5px solid var(--line);border-radius:30px;padding:9px 13px;fo
 <div class="badge">📲 Reserva 993 943 563</div>
 </div>
 <div class="wrap" id="catalogo">
-<div class="tasa">💱 <b>SOLO 100 ML · Todas las áreas</b> · TC <b>285.17 CLP = S/1</b> + 50% margen Perú · <span id="tcount">cargando...</span></div>
+<div class="tasa">💱 <b>SOLO 100 ML · Todas las áreas</b> · TC <b>285.17 CLP = S/1</b> · <b>−10% aplicado</b> en toda la tienda · <span id="tcount">cargando...</span></div>
 <section class="reserve">
 <div><h2>¡Reserva ahora! <em>Asegura la tuya pagando el 50%.</em></h2>
 <p>Escríbenos por WhatsApp al <b>993 943 563</b> para consultar disponibilidad y reservar. Te confirmamos stock, te enviamos el link de pago del <b>50% de anticipo</b> y separamos tu perfume 100 ML.</p></div>
@@ -169,7 +169,7 @@ select.sel{border:1.5px solid var(--line);border-radius:30px;padding:9px 13px;fo
 </div>
 </div>
 <footer class="footer"><div class="footer-inner">
-<div><h4>ESSENZA PERÚ 🇵🇪</h4><p>Espejo de multimarcasperfumes.cl filtrado a 100 ML. Conversión CLP→PEN con +50%.</p><p>WhatsApp 993 943 563</p></div>
+<div><h4>ESSENZA PERÚ 🇵🇪</h4><p>Espejo de multimarcasperfumes.cl filtrado a 100 ML. Conversión CLP→PEN con −10% aplicado.</p><p>WhatsApp 993 943 563</p></div>
 <div><h4>Áreas 100 ML</h4><li>Mujer · Hombre · Unisex</li><li>Árabes · Testers · Estuches</li></div>
 <div><h4>Ayuda</h4><li>Reserva con 50% anticipo</li><li>Cambios 7 días</li><li>Libro de reclamaciones</li></div>
 <div><h4>TC CLP → PEN</h4><p>285.17 CLP = S/1 (24/09/2026).</p></div>
@@ -191,7 +191,7 @@ select.sel{border:1.5px solid var(--line);border-radius:30px;padding:9px 13px;fo
 <div class="toast" id="toast">Agregado</div>
 <a class="wa" href="https://wa.me/56993943563?text=Hola%2C%20quiero%20reservar%20un%20perfume%20100%20ML%20pagando%20el%2050%25" target="_blank">✆</a>
 <script>
-const TC=285.17, MARGEN=1.5, POR_PAG=48;
+const TC=285.17, MARGEN=1.35, POR_PAG=48;
 const soles=clp=>+(clp*MARGEN/TC).toFixed(2);
 const fmt=n=>'S/ '+n.toFixed(2);
 let ALL=[], filtro='todos', q='', marca='', orden='relev', pag=1;
@@ -199,7 +199,7 @@ async function cargar(){
   try{ const r=await fetch('catalogo-100ml.json'); ALL=await r.json(); }
   catch(e){ document.getElementById('grid').innerHTML='<p class="empty">No se pudo cargar catalogo-100ml.json.</p>'; return; }
   ALL=ALL.filter(p=>p.clp>0);
-  document.getElementById('hero-sub').innerHTML=`Catálogo completo: <strong>${ALL.length.toLocaleString()} perfumes 100 ML</strong> · <strong>Chile +50% → soles</strong> · TC <strong>285.17</strong> · Reserva con 50% al <strong>993 943 563</strong>`;
+  document.getElementById('hero-sub').innerHTML=`Catálogo completo: <strong>${ALL.length.toLocaleString()} perfumes 100 ML</strong> · <strong>−10% aplicado → soles</strong> · TC <strong>285.17</strong> · Reserva con 50% al <strong>993 943 563</strong>`;
   document.getElementById('st-total').textContent=ALL.length.toLocaleString();
   document.getElementById('tcount').textContent=`${ALL.length.toLocaleString()} productos 100 ML listos.`;
   const marcas=[...new Set(ALL.map(p=>p.marca).filter(Boolean))].sort();
@@ -226,7 +226,7 @@ function card(p,i){
   return `<div class="card" style="animation-delay:${(i%48)*18}ms">${off}<div class="imgw"><img loading="lazy" src="${img}" alt="" onerror="this.style.opacity=0"><span class="marca-tag">${p.marca||'Original'}</span></div>
   <div class="card-body"><div class="stars">★★★★★ <span style="color:#a39c8d">· 100 ML</span></div><h3>${p.t}</h3>
   <div class="precios"><span class="new">${fmt(s)}</span>${oldH}</div>
-  <div class="clp">$${p.clp.toLocaleString('es-CL')} CLP +50% · ${p.cat||''}</div>
+  <div class="clp">$${p.clp.toLocaleString('es-CL')} CLP −10% · ${p.cat||''}</div>
   <div class="stock"><span class="dot"></span>Stock Lima · Envío 24/48h</div>
   <button class="add" onclick="addCart('${p.h}')">🛒 Añadir · ${fmt(s)}</button></div></div>`;
 }
